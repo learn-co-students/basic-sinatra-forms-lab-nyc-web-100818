@@ -5,10 +5,11 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
+
+ <%@params.each_with_index do |param,i| %>
+  <%="#{@out[i]}#{param[1]}" %>
+  <%end%>
 
 
  </body>
 </html>
-
-
